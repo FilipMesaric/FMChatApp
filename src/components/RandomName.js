@@ -1,0 +1,51 @@
+export default function randomName() {
+  const adjectives = [
+    "Lijepi ",
+    "Veliki ",
+    "Mali  ",
+    "Tvrdi ",
+    "Mekani ",
+    "Pametni ",
+    "Zeleni ",
+    "Plavi ",
+    "Kockasti ",
+    "Prozracni ",
+    "Prazan ",
+    "Brzi ",
+    "Spori ",
+    "Mirisljavi ",
+    "Moderni ",
+    "Skupi ",
+    "Prekrasni ",
+    "Elektricni ",
+    "Svijetleci ",
+    "Mracni ",
+    "Vrhunski ",
+    "Odlicni ",
+    "Nezaustavljivi ",
+  ];
+  const nouns = [
+    "Avion",
+    "Ajvar",
+    "Doktor",
+    "Amerikanac",
+    "Avion",
+    "Mobitel",
+    "Stol",
+    "Pod",
+    "Radijator",
+    "Novcanik",
+    "Nakit",
+    "Motor",
+    "Svijet",
+    "Kaleidoskop",
+    "Kufer",
+    "Sprej",
+    "Papir",
+    "Stolac",
+    "Pas",
+  ];
+  const adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+  const noun = nouns[Math.floor(Math.random() * nouns.length)];
+  return adjective + noun;
+}

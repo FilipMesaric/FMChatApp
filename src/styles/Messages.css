@@ -1,0 +1,43 @@
+.list {
+    padding: 20px 0;
+    max-width: 1300px;
+    width: 100%;
+    margin: 10px auto;
+    list-style: none;
+    padding-left: 0;
+    flex-grow: 1;
+    overflow: auto;
+    }
+  
+  .messages {
+    text-shadow: 1px 1px 1px rgba(170, 168, 168, 0.8);
+    display: flex;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+  
+  .messages.host-user {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+  
+  .msg-content {
+    display: inline-block;
+  }
+  
+  
+  .msg-content > .username {
+    display: block;
+    color: gray;
+    font-size: 14px;
+    padding-bottom: 4px;
+  }
+  
+  .msg-content > .text {
+    padding: 10px;
+    max-width: 400px;
+    margin: 0;
+    border-radius: 12px;
+    color: white;
+    display: inline-block;
+  }
